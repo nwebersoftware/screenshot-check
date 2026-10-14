@@ -1,0 +1,23 @@
+{
+  "name": "@njweber/screenshot-check",
+  "version": "0.1.0",
+  "description": "Check store screenshots against the Google Play / App Store rules — dimensions, format, aspect ratio, count. Dependency-free.",
+  "type": "module",
+  "bin": {
+    "screenshot-check": "bin/screenshot-check.mjs"
+  },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": ["app-store", "google-play", "screenshots", "aso", "release", "react-native", "expo", "cli"],
+  "repository": { "type": "git", "url": "git+https://github.com/nwebersoftware/screenshot-check.git" },
+  "homepage": "https://github.com/nwebersoftware/screenshot-check#readme",
+  "bugs": { "url": "https://github.com/nwebersoftware/screenshot-check/issues" },
+  "author": "Boolean Build (a Boolean Bros project)",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "icon-check": "^0.1.0"
+  }
+}

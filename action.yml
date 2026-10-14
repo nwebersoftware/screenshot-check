@@ -1,0 +1,24 @@
+name: screenshot-check
+description: Check store screenshots (dimensions, format, aspect ratio, count) before upload.
+branding:
+  icon: image
+  color: blue
+
+inputs:
+  path:
+    description: A directory of screenshots, or individual files.
+    required: true
+  ios:
+    description: Check App Store rules instead of Google Play.
+    required: false
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        npm install --prefix "${{ github.action_path }}" --no-audit --no-fund --silent
+        FLAGS=""
+        if [ "${{ inputs.ios }}" = "true" ]; then FLAGS="--ios"; fi
+        node "${{ github.action_path }}/bin/screenshot-check.mjs" ${{ inputs.path }} $FLAGS
