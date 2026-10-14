@@ -1,5 +1,8 @@
 # screenshot-check
 
+[![npm](https://img.shields.io/npm/v/%40njweber%2Fscreenshot-check)](https://www.npmjs.com/package/@njweber/screenshot-check) [![downloads](https://img.shields.io/npm/dm/%40njweber%2Fscreenshot-check)](https://www.npmjs.com/package/@njweber/screenshot-check) [![CI](https://github.com/nwebersoftware/screenshot-check/actions/workflows/ci.yml/badge.svg)](https://github.com/nwebersoftware/screenshot-check/actions/workflows/ci.yml)
+
+
 **Check store screenshots against the rules before upload.** Google Play rejects screenshots for
 size/ratio reasons that are trivial to verify — and the App Store wants native iPhone sizes.
 
